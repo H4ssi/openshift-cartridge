@@ -6,6 +6,12 @@ version=${OPENSHIFT_VERTX_VERSION}
 milestone=${OPENSHIFT_VERTX_MILESTONE}
 dist=vert.x-$version$milestone
 
+jre_version=${OPENSHIFT_VERTX_JRE_VERSION}
+jre_build_number=${OPENSHIFT_VERTX_JRE_BUILD_NUMBER}
+jre_dist=jre-$jre_version-b$jre_build_number
+
+JRE_HOME=${OPENSHIFT_VERTX_DIR}/usr/$jre_dist
+
 logf="$OPENSHIFT_VERTX_LOG_DIR/console.log"
 
 VERTX_HOME=${OPENSHIFT_VERTX_DIR}/usr/$dist
@@ -154,6 +160,7 @@ function start() {
 
     export CLASSPATH=$OPENSHIFT_VERTX_DIR/conf
     export VERTX_JUL_CONFIG=$OPENSHIFT_VERTX_DIR/conf/logging.properties
+    export PATH=$JRE_HOME/bin:$PATH
     $VERTX_HOME/bin/vertx $vertx_run $vertx_run_options $vertx_cluster >> $logf 2>&1 &
     
     PROCESS_ID=$!

@@ -1,5 +1,5 @@
 # OpenShift Cartridge for Vert.x
-A downloadable cartridge which can be used to run Vert.x on OpenShift. 
+A downloadable cartridge which can be used to run Vert.x on OpenShift. Bundles JRE 8. 
 
 ## Getting started
 

@@ -1,14 +1,14 @@
-Name: vertx
+Name: vertxjre8
 Cartridge-Short-Name: VERTX
-Display-Name: Vert.x 2.1
-Description: "Vert.x is a lightweight, high performance application platform for the JVM that's designed for modern mobile, web, and enterprise applications."
+Display-Name: Vert.x 2.1 JRE 8
+Description: "Vert.x is a lightweight, high performance application platform for the JVM that's designed for modern mobile, web, and enterprise applications. JRE 8 bundled."
 Version: '2.1'
 License: EPL 1.0
 License-Url: http://www.eclipse.org/legal/epl-v10.html
 Vendor: Eclipse Foundation
 Cartridge-Version: 0.0.1
 Cartridge-Vendor: jboss
-Source-Url: https://github.com/vert-x/openshift-cartridge.git
+Source-Url: https://github.com/H4ssi/vert-x-openshift-cartridge.git
 Categories:
   - web_framework
   - community
